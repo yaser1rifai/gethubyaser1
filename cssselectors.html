@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS SELECTORS</title>
+    <style>
+           *{ border: 1px solid black;}
+         h2 {color: brown;}
+         h1 {color:blue;}
+         p[target=abcd]{background-color: #8400ff;}
+         [title~=flower]{border: 1px solid aqua;}
+         [class|=top]{background: chartreuse;}
+         [class^=top]{background: red;}
+         [class$=test]{background:brown;}
+         [class*=ya]{background:#51a52a;}
+          div p{color:yellow;}
+         div>p{background-color: blue;}
+         div+p{color:green;}
+         div~p{color:hotpink;}
+         
+
+         p:first-child{color:lawngreen;}
+         p:last-child{color:whitesmoke;}
+
+         p:nth-child(odd){ background: red;}
+         p:nth-child(even){ background: blue;}
+         h1:nth-child(1){ background:yellow;}
+
+         p:nth-child(2n+1){ background:pink;}
+         li:not(.different){color: violet;}
+          :not(::first-line){color: blue;}
+
+          div{
+              background-color: #51a52a;
+              padding:20px;
+              display: none;
+          }
+          span:hover+div{display: block;}
+
+          h1{
+              background: #8400ff;
+              padding: 20px;
+              display: none;
+          }
+
+         
+              button:active + h1 {
+                  display:block;
+          }
+
+    </style>
+</head>
+<body>
+    <h2>Tag Selectors</h2>
+    <h1>Tag Selectors</h1>
+    <h1>Tag Selectors</h1>
+    <h1>Tag Selectors</h1>
+    <h1>Tag Selectors</h1>
+    <h1>Tag Selectors</h1>
+    <h1>Tag Selectors</h1>
+
+    <div>
+            <h2>class|=top</h2>
+    <p title="flower">Paragrah 1 in the div.</p>
+    <p target="_round flower">Paragrah 2in the div.</p>
+    <p target="abcd">Paragrah 3 in the div.</p>
+    <h2>class^=top] </h2>
+    <h1 class="top-header">Welcome</h1>
+    <p class="top-text"> Hello World</p>
+    <p class="topcontent"> are you learing css now?</p>
+
+    <h2>select $</h2>
+    <h1 class="first-test">Welcome</h1>
+    <p class="second "> Hello World</p>
+    <p class="mytest"> are you learing css now?</p>
+
+ 
+    <h2> class*=te</h2>
+    <h1 class="yaser">Welcome</h1>
+    <p class="naser"> Hello World</p>
+    <p class="yasmeen"> are you learing css now?</p>
+
+    </div>
+    
+  
+      <div>
+
+        
+        <h2>-------------desendent selectors  ----------</h2>
+               <p>paragrahh 1</p>
+               <p>paragrahh 2</p>
+             <span>  <p>paragrahh 3</p></span>
+             <main><p>parag 11</p></main>
+
+    </div>
+              <p>paragrahh 4</p>
+               <p>paragrahh 5</p>
+               
+   ---------------------- first child
+               <p>This is some Text</p>
+               <p>This is some Text</p>
+                              <div>
+                   <article>
+                    <p>This is some Text222222</p>
+                    <p>This is some Text</p>
+                    
+                </article>
+
+               </div>
+       -------------------
+
+             <div>
+               <p>This is some Text--- first </p>
+               <p> ......This is some Text</p>
+               <p>This is some Text</p>
+               <p>This is some Text  .. last </p>
+            </div>
+                <div>
+                   <article>
+                    <p>This is some Text222222  first </p>
+                    <p> ..... This is some Text.... last </p>
+                    
+                </article>
+                <p>This is some Text   </p>
+                <p> ..... This is some Text......  last </p>
+               </div>
+                -->
+                
+                 <p> nummer 1</p>
+                <p> nummer 2</p>
+                <p> nummer 3</p>
+                <p> nummer 4</p>
+                <p> nummer 5</p>
+                <p> nummer 6</p>
+              
+
+                <ul>
+                    <li class="">list item 1</li>
+                    <li class="different">list item 2</li>
+                    <li>list item 3</li>
+
+                </ul>
+
+                <span> hover over me!</span>
+                <div>I will show on hover</div>
+
+                <button>Click</button>
+                <h1> Iam activ now!</h1>
+</body>
+</html>
